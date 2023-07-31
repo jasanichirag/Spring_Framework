@@ -9,6 +9,8 @@
 		
 <context:annotation-config/>
 <bean id="address" class="com.annotation_with_Autowiring.Address1" p:add1="Shihor" p:add2="Bhavnagar"/>
+<bean id="address2" class="com.annotation_with_Autowiring.Address1" p:add1="Sanosara" p:add2="shihor"/>
+
 <bean id="s" class="com.annotation_with_Autowiring.Student" p:name="Jasani chirag"/>
 
 </beans>

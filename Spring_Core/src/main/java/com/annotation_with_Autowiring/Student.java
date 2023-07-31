@@ -1,10 +1,12 @@
 package com.annotation_with_Autowiring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
 	private String name;
 	@Autowired
+	@Qualifier("address2")
 	private Address1 address;
 	
 	public Student() {
