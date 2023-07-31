@@ -4,12 +4,13 @@ xmlns:p="http://www.springframework.org/schema/p"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!-- autowiring by name -->
+<!--1) autowiring by name/Id -->
 <!-- 
 <bean id="add" class="com.autowiring.Add" p:street="Lokbharti Road" p:street2="Sanosara" />
 <bean id="add1" class="com.autowiring.Add" p:street="gariyadhar Road" p:street2="sanosara2" />
 <bean name="emp" class="com.autowiring.Emp" p:eid="12" p:name="jasani chirag" autowire="byName"/>
  -->
+ <!--2) auto wiring by Type/class  -->
  <bean id="add1" class="com.autowiring.Add" p:street="aksharwadi road" p:street2="bhavnagar"/>
  <bean id="emp1" class="com.autowiring.Emp" p:eid="1007" p:name="ram" autowire="byType"/>
  

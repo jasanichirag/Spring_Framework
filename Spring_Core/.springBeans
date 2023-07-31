@@ -10,6 +10,7 @@
 		<config>src/main/java/com/constructorIoc/overloding.xml</config>
 		<config>src/main/java/com/life_cycle/cycle.xml</config>
 		<config>src/main/java/com/autowiring/autowiring.xml</config>
+		<config>src/main/java/com/constructorAutowiring/consAutowiring.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
