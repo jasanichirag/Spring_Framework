@@ -14,6 +14,6 @@ public class Test1 {
 		System.out.println(p.getName());
 		System.out.println(p.getConsadd().getStreet());
 		System.out.println(p.getConsadd().getStreet1());
-		System.out.println("-----------------------------\n"+a.getStreet()+"\n"+a.getStreet1());
+		//System.out.println("-----------------------------\n"+a.getStreet()+"\n"+a.getStreet1());
 	}
 }
