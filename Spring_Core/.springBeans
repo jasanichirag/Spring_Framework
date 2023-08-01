@@ -12,6 +12,7 @@
 		<config>src/main/java/com/autowiring/autowiring.xml</config>
 		<config>src/main/java/com/constructorAutowiring/consAutowiring.xml</config>
 		<config>src/main/java/com/annotation_with_Autowiring/annotation.xml</config>
+		<config>src/main/java/com/standalone_collection/standalode.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+
+
+	<!-- Standalone collection list -->
+	
+<util:list list-class="java.util.ArrayList" id="fd">
+<value>jasani</value>
+<value>balar</value>
+<value>hardik</value>
+<value>amit</value>
+<value>akshay</value>
+</util:list>
+
+<!--  Stand Alone map -->
+
+<util:map map-class="java.util.HashMap" id="fee">
+<entry key="java" value="10000"/>
+<entry key="python" value="8000"/>
+<entry key=".Net" value="5000"/>
+<entry key="nodeJS" value="3000"/>
+</util:map>
+
+<!-- Stand alone set -->
+<util:set set-class="java.util.HashSet" id="mob">
+<value>903433223</value>
+<value>989322132</value>
+<value>8923112212</value>
+<value>7046970705</value>
+<value>7046970705</value>
+
+</util:set>
+
+<bean class="com.standalone_collection.Man" id="m1" >
+<property name="friends" ref="fd"/>
+ <property name="fees" ref="fee"/>
+ <property name="mobile" ref="mob"/>
+</bean>
+
+
+</beans>
