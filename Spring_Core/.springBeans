@@ -14,6 +14,7 @@
 		<config>src/main/java/com/annotation_with_Autowiring/annotation.xml</config>
 		<config>src/main/java/com/standalone_collection/standalode.xml</config>
 		<config>src/main/java/com/stereotype_Annotation/stereotype.xml</config>
+		<config>src/main/java/com/beanScope/scope.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
