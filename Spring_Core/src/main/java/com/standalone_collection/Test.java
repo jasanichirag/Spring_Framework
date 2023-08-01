@@ -10,7 +10,7 @@ public class Test {
 		System.out.println("Stand Alone Collection Start......!!!!");
 		ApplicationContext context=new ClassPathXmlApplicationContext("com/standalone_collection/standalode.xml");
 		Man m1 = context.getBean("m1",Man.class);
-		System.out.println("Friens : " +m1.getFriends()); // get list
+		System.out.println("Friends : " +m1.getFriends()); // get list
 		System.out.println("-----------------------------------");
 		System.out.println(m1.getFees()); // get map
 		System.out.println("=============================");
