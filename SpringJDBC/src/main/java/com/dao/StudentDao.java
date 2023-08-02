@@ -18,7 +18,13 @@ public class StudentDao {
 	
 	public int insert(Student s) {
 		String sql="insert into Student (id,name,email) value(?,?,?)";
-		int i = jdbcTemplate.update(sql,s.getId(),s.getName(),s.getEmail());
+		int i = this.jdbcTemplate.update(sql,s.getId(),s.getName(),s.getEmail());
+		return i;
+	}
+	
+	public int updateStudent(Student s) {
+		String sql="update student set name=?,email=? where id=?";
+		int i=this.jdbcTemplate.update(sql,s.getName(),s.getEmail(),s.getId());
 		return i;
 	}
 }
