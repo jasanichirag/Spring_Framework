@@ -27,4 +27,11 @@ public class StudentDao {
 		int i=this.jdbcTemplate.update(sql,s.getName(),s.getEmail(),s.getId());
 		return i;
 	}
+	
+	public int deleteStudentById(int id) {
+		String sql="delete from student where id=?";
+		int i = this.jdbcTemplate.update(sql,id);
+		return i;
+		
+	}
 }
