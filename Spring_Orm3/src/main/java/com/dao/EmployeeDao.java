@@ -48,7 +48,7 @@ public class EmployeeDao {
 		return e;
 	}
 
-	// gel all employee;
+	// get all employee;
 	@Transactional
 	public List<Employee> getEmployee() {
 		List list = this.hibernateTemplate.loadAll(Employee.class);
