@@ -45,7 +45,6 @@
 			<value>com.entity.Student</value>
 		</list>
 	</property>
-
 </bean>
 
 <!-- Hibernate Template class -->
