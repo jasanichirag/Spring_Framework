@@ -52,20 +52,23 @@ public class App {
 					System.out.print("Enter Student Email : ");
 					s.setEmail(Sc.nextLine());
 					std.insertStudent(s);
+					System.out.println("Data entered successfully");
 //					System.out.println(s.getAddress() + " " + s.getEmail() + " " + s.getName() + " " + s.getSid());
 					break;
 				}
 				case 2: {
 					// get All Student Data ;
 					// System.out.println("Get All student");
+					System.out.println("======================================");
 					List<Student> list = std.getAllStudent();
 					for (Student s : list) {
 						System.out.println("Student Id : " + s.getSid());
 						System.out.println("Student Name : " + s.getName());
 						System.out.println("Student Address : " + s.getAddress());
 						System.out.println("Student Email : " + s.getEmail());
-						System.out.println("======================================");
+						System.out.println("**************************************");
 					}
+					System.out.println("======================================");
 					break;
 				}
 				case 3: {
@@ -88,6 +91,7 @@ public class App {
 					System.out.print("Enter Student Id : ");
 					int id = Sc.nextInt();
 					std.deleteStudetById(id);
+					System.out.println("Data Delete successfully");
 					break;
 				}
 				case 5: {
@@ -105,6 +109,7 @@ public class App {
 					System.out.print("Enter Student Email : ");
 					s.setEmail(Sc.nextLine());
 					std.updateById(s);
+					System.out.println("Data Update successfully");
 					break;
 				}
 				case 6: {
