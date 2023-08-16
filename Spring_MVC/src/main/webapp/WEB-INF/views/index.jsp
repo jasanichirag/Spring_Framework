@@ -11,6 +11,12 @@
 <title>HOME / Index page</title>
 </head>
 <body>
+ <%
+    String title=(String) request.getAttribute("title");
+    String subTitle=(String)request.getAttribute("subTitle");
+    %>
+    <h1><%=title %></h1>
+    <h4><%=subTitle %></h4>
 <h1>hello world</h1>
 <h1>this is a HOME / Index page</h1>
 

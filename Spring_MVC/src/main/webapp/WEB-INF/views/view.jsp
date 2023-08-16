@@ -1,3 +1,4 @@
+    
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!doctype html>
@@ -13,7 +14,12 @@
     <title>View</title>
   </head>
   <body>
-    
+    <%
+    String title=(String) request.getAttribute("title");
+    String subTitle=(String)request.getAttribute("subTitle");
+    %>
+    <h1><%=title %></h1>
+    <h4><%=subTitle %></h4>
     <div class="container">
      	<h1 class="container text-center">Registration Form</h1>
     		<form action="data" method="post">
